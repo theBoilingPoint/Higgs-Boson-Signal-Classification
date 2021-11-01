@@ -89,6 +89,7 @@ _6_ models were implemented in `/scripts/implementations.py` including
 In order to do k-fold cross-validation, one can use functions in `/scripts/cross_validation.py` (all the code for doing cross validation on each model can be found in `/scripts/project1.ipynb`).
 For example, doing 5-fold cross validation for regularized logistic regression can be
 ```
+from preprocess import preprocess
 from implementations import logistic_regression, compute_loss_logistic_regression, loss_reg_logistic_regression, reg_logistic_regression
 from cross_validation import build_k_indices, cross_validation
 
